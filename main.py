@@ -12,6 +12,14 @@ api_hash = os.environ.get("api_hash")
 
 client = TelegramClient("session_name", api_id, api_hash)
 
+"""
+TODO:
+    1. More settings (the amount of messages, filename etc).
+    2. JSON viewer (can be toggled by a switch).
+"""
+
+enableJSONViewer = False
+
 root = ctk.CTk()
 root.title("Telegram Chat Fetcher")
 root.geometry("350x200")
